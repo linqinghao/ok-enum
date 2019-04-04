@@ -1,0 +1,16 @@
+{
+  "name": "enums",
+  "version": "1.0.0",
+  "description": "",
+  "main": "enum.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "debug": "^4.1.1"
+  }
+}
