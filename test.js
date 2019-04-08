@@ -3,6 +3,12 @@ const Enum = require('./enum');
 const dayEnum = new Enum({
   Mon: '1',
   Tus: '2'
+}, {
+  hooks: {
+    isMon(val) {
+      return val == this.Mon;
+    }
+  }
 });
 
 // const a = new Enum([1, 2])
@@ -16,10 +22,11 @@ const dayEnum = new Enum({
 // dayEnum.isMon('1');
 
 
-dayEnum.Mon = 123123;
+// dayEnum.Mon = 123123;
 
-console.log(dayEnum, dayEnum.Mon)
+// console.log(dayEnum, dayEnum.Mon)
 
-const a = new Enum(['a', 'b'])
 
-console.log(a)
+// const a = new Enum(['a', 'b'])
+
+// console.log(a)
