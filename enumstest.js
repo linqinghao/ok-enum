@@ -1,4 +1,4 @@
-const Enum = require('./enum');
+const Enum = require('./lib/enum');
 
 const dayEnum = new Enum({
   Mon: '1',
@@ -10,6 +10,11 @@ const dayEnum = new Enum({
     }
   }
 });
+
+console.log(dayEnum);
+
+console.log(dayEnum.isMon('123'))
+
 
 // const a = new Enum([1, 2])
 
