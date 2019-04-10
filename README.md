@@ -1,7 +1,19 @@
 # Enum
 
-# Install
+Encapsulates the enum type in js
 
-# Usage
+![travis-ci](https://img.shields.io/travis/linchinghao/enums.svg)
 
-# LICENSE
+## Install
+
+```js
+$ npm install --save enums
+// or
+$ yarn add enums
+```
+
+## Usage
+
+## LICENSE
+
+MIT
