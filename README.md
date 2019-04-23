@@ -1,11 +1,11 @@
 # ok-enum
 
-Encapsulates the enum type in js
+Encapsulates the Enum type in js
 
 ![travis-ci](https://img.shields.io/travis/linchinghao/ok-enum.svg)
 
 ## Features
-- Encapsulates the enum type in js
+- Encapsulates the Enum type in js
 - Easy to use and extend
 - Avoid enumeration values being modified
 
@@ -77,10 +77,47 @@ WEEK.isWeek('Sat'); // true
 
 ### Instance methods
 - Enum#get(key)
+  return value in the enums by the key.
+
+  ```js
+  const Fruit = new Enum({ APPLE: '1', BANANA: '2' });
+  Fruit.get('APPLE'); // '1'
+  Fruit.get('WATERMELON'); // undefined
+  ```
+
 - Enum#has(key)
+  return true if key in the enums.
+
+  ```js
+  const Fruit = new Enum({ APPLE: '1', BANANA: '2' });
+  Fruit.has('APPLE'); // true
+  Fruit.has('WATERMELON'); // false
+  ```
+
 - Enum#values()
+  return all values in the enums by array.
+
+  ```js
+  const Fruit = new Enum({ APPLE: '1', BANANA: '2' });
+  Fruit.has('APPLE'); // true
+  Fruit.has('WATERMELON'); // false
+  ```
+
 - Enum#keys()
+  return all keys in the enums by array.
+
+  ```js
+  const Fruit = new Enum({ APPLE: '1', BANANA: '2' });
+  Fruit.keys(); // ['APPLE', 'BANANA']
+  ```  
+
 - Enum#original()
+  return original values.
+
+  ```js
+  const Fruit = new Enum({ APPLE: '1', BANANA: '2' });
+  Fruit.values(); // ['1', '2']
+  ```  
 
 
 ## LICENSE
