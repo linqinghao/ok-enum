@@ -7,9 +7,21 @@
     "test": "jest --color",
     "cov": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "enum",
+    "ok-enum",
+    "enumjs",
+    "enumsjs"
+  ],
+  "author": "linchinghao",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linchinghao/ok-enum"
+  },
+  "bugs": {
+    "url": "https://github.com/linchinghao/ok-enum/issues"
+  },
   "dependencies": {
     "jest": "^24.7.1"
   },
