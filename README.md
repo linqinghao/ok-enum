@@ -62,10 +62,10 @@ const Fruit = new Enum({ Apple: '1', Banana: '2' }, { freeze: false })
 // you can modify enum
 Fruit.Apple = '3'
 
-// @param {Object} [hooks]
+// @param {Object} [handlers]
 const WEEK = new Enum(['Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'], {
   mirror: true,
-  hooks: {
+  handlers: {
     isWeek: function(val) {
       return val == this.Sat || val == this.Sun
     }
