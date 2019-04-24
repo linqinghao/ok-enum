@@ -2,7 +2,7 @@
 
 Encapsulates the Enum type in js
 
-![travis-ci](https://img.shields.io/travis/linchinghao/ok-enum.svg)
+![travis-ci](https://img.shields.io/travis/linchinghao/ok-enum.svg?style=flat-square) ![coverage](https://img.shields.io/codecov/c/github/linchinghao/ok-enum.svg?style=flat-square) ![downloads](https://img.shields.io/npm/dt/ok-enum.svg?style=flat-square)
 
 ## Features
 - Encapsulates the Enum type in js
