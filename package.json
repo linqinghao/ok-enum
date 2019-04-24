@@ -1,6 +1,6 @@
 {
   "name": "ok-enum",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Encapsulates the Enum type in js",
   "main": "index.js",
   "scripts": {
