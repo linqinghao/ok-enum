@@ -5,9 +5,11 @@ node_js:
   - "8.10.0"
 before_script:
   - npm install
+install:
+  - npm install -g codecov
 #运行的脚本命令
 script:
-  - npm run test
+  - jest && codecov
 #指定分支，只有指定的分支提交时才会运行脚本
 branches:
   only:
