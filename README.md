@@ -44,7 +44,7 @@ const Day = new Enum(['Mon', 'Tus'])
 
 ## API
 
-### Enum config
+### Config
 
 ```js
 // @param {Boolean} [mirror=false]
@@ -74,9 +74,9 @@ const WEEK = new Enum(['Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'], {
 WEEK.isWeek('Sat') // true
 ```
 
-### Instance methods
+### Methods
 
-- Enum#get(key)
+- get(key)
   return value in the enums by the key.
 
   ```js
@@ -85,7 +85,7 @@ WEEK.isWeek('Sat') // true
   Fruit.get('WATERMELON') // undefined
   ```
 
-- Enum#has(key)
+- has(key)
   return true if key in the enums.
 
   ```js
@@ -94,16 +94,15 @@ WEEK.isWeek('Sat') // true
   Fruit.has('WATERMELON') // false
   ```
 
-- Enum#values()
+- values()
   return all values in the enums by array.
 
   ```js
   const Fruit = new Enum({ APPLE: '1', BANANA: '2' })
-  Fruit.has('APPLE') // true
-  Fruit.has('WATERMELON') // false
+  Fruit.values() // ['1', '2']
   ```
 
-- Enum#keys()
+- keys()
   return all keys in the enums by array.
 
   ```js
@@ -111,12 +110,12 @@ WEEK.isWeek('Sat') // true
   Fruit.keys() // ['APPLE', 'BANANA']
   ```
 
-- Enum#original()
+- original()
   return original values.
 
   ```js
   const Fruit = new Enum({ APPLE: '1', BANANA: '2' })
-  Fruit.values() // ['1', '2']
+  Fruit.original() // { APPLE: '1', BANANA: '2' }
   ```
 
 ## LICENSE
